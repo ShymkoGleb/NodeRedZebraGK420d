@@ -1,0 +1,26 @@
+<script type="text/javascript">
+    RED.nodes.registerType('printerzebra',{
+        category: 'printer',
+        color: '#FFbbcf',
+        defaults: {
+            name: {value:""}
+        },
+        inputs:1,
+        outputs:1,
+        icon: "",
+        label: function() {
+            return this.name||"printerzebra";
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="printerzebra">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i>Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+</script>
+
+<type="text/x-red" data-help-name="printerzebra">
+    <p>Node which use zebra printer</p>
+</script>
